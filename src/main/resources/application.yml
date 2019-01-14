@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: localhost
+    username: ml
+    password: xing886372
+    port: 5672
+    virtual-host: test
+    publisher-confirms: true
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
