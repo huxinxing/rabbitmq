@@ -14,17 +14,17 @@ public class DirectExchangeConfig {
 
     @Bean
     public DirectExchange directExchange(){
-        return new DirectExchange("direct");
+        return new DirectExchange("direct",true,false);
     }
 
     @Bean
     public Queue directQueue1(){
-        return new Queue("direct1");
+        return new Queue("direct1",true);
     }
 
     @Bean
     public Queue directQueue2(){
-        return new Queue("direct2");
+        return new Queue("direct2",true);
     }
 
     @Bean
